@@ -1,0 +1,70 @@
+/* Main.css */
+
+/* General layout adjustments */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center-align movies */
+}
+
+/* Movie card styling */
+.card {
+  margin: 10px;
+  width: 100%; /* Full-width on mobile */
+  max-width: 18rem; /* Limit width on larger screens */
+  border: 1px solid var(--border-color); /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  background-color: var(--card-background); /* White background */
+  transition: transform 0.3s ease; /* Smooth scale effect on hover */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+/* Card image styling */
+.card img {
+  border-radius: 8px 8px 0 0; /* Rounded top corners for images */
+  max-height: 300px; /* Limit image height */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+/* Card body styling */
+.card-body {
+  padding: 15px; /* Add padding for card body */
+}
+
+/* Card title styling */
+.card-title {
+  color: var(--primary-color); /* Dark blue for titles */
+}
+
+/* Card text styling */
+.card-text {
+  color: var(--muted-text-color); /* Muted text color */
+  margin: 10px 0; /* Spacing for text */
+}
+
+/* Button styling inside cards */
+.card .btn {
+  background-color: var(--secondary-color) !important; /* Gold */
+  color: white !important; /* White text */
+  border-radius: 5px; /* Rounded corners */
+  border: none; /* Remove border to match custom styles */
+}
+
+.card .btn:hover {
+  background-color: darkgoldenrod !important; /* Darker gold on hover */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .card {
+      max-width: 100%; /* Full width on small screens */
+  }
+
+  .card img {
+      max-height: 200px; /* Adjust image height on small screens */
+  }
+}

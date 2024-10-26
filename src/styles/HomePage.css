@@ -1,0 +1,96 @@
+.container {
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.card {
+  transition: transform 0.2s ease-in-out;
+  max-width: 100%; /* Ensure card does not exceed its parent width */
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #666;
+  height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-img-top {
+  height: auto; /* Maintain aspect ratio */
+  max-height: 250px; /* Limit the height for consistency */
+  object-fit: cover; /* Ensure images cover the card area without distortion */
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  width: 100%;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+
+/* Style for Empty Cards */
+.empty-card {
+  width: 100%; /* Full width of the card */
+  height: 300px; /* Adjust height to match movie card size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; /* Light gray background */
+  border: 2px solid #ddd; /* Light border */
+  border-radius: 5px; /* Match card border radius */
+  font-size: 1rem; /* Font size for text */
+  color: #666; /* Text color */
+}
+
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-text {
+    font-size: 0.8rem;
+  }
+
+  .card {
+    max-width: 100%; /* Ensure cards fit within their container */
+  }
+}
+
+@media (max-width: 576px) {
+  .card-text {
+    font-size: 0.75rem;
+    height: 50px;
+  }
+
+  .btn-primary {
+    font-size: 0.9rem;
+  }
+}

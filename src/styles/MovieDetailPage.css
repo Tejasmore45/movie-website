@@ -1,0 +1,73 @@
+/* MovieDetailPage.css */
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.img-fluid {
+  border-radius: 8px;
+}
+
+.cast-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cast-member {
+  width: 80px;
+  text-align: center;
+  margin: 0 10px; /* Add some margin for spacing */
+}
+
+.cast-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border: 2px solid #ddd;
+}
+
+/* Style for Empty Cards */
+.empty-card {
+  width: 80px; /* Same width as cast images */
+  height: 80px; /* Same height as cast images */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; /* Light gray background */
+  border: 2px solid #ddd; /* Light border */
+  border-radius: 50%; /* Make it circular */
+  margin: 0 10px; /* Add some margin for spacing */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .img-fluid {
+    max-width: 80%;
+    margin: auto;
+  }
+
+  .cast-list {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
