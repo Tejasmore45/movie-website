@@ -5,7 +5,6 @@ import HomePage from './pages/HomePage';
 import TopRatedPage from './pages/TopRatedPage';
 import UpcomingPage from './pages/UpcomingPage';
 import MovieDetailPage from './pages/MovieDetailPage';
-import SearchPage from './pages/SearchPage';
 import './styles/App.css'; 
 import './styles/main.css'; 
 
@@ -18,7 +17,6 @@ function App() {
         <Route path="/top-rated" element={<TopRatedPage />} />
         <Route path="/upcoming" element={<UpcomingPage />} />
         <Route path="/movie/:id" element={<MovieDetailPage />} />
-        <Route path="/search" element={<SearchPage />} />
       </Routes>
     </Router>
   );

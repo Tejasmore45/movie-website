@@ -10,7 +10,7 @@ h1 {
 
 .card {
   transition: transform 0.2s ease-in-out;
-  max-width: 100%; /* Ensure card does not exceed its parent width */
+  max-width: 100%;
 }
 
 .card:hover {
@@ -32,9 +32,9 @@ h1 {
 }
 
 .card-img-top {
-  height: auto; /* Maintain aspect ratio */
-  max-height: 250px; /* Limit the height for consistency */
-  object-fit: cover; /* Ensure images cover the card area without distortion */
+  height: auto;
+  max-height: 250px;
+  object-fit: cover;
 }
 
 .btn-primary {
@@ -49,23 +49,19 @@ h1 {
   border-color: #0056b3;
 }
 
-
-/* Style for Empty Cards */
 .empty-card {
-  width: 100%; /* Full width of the card */
-  height: 300px; /* Adjust height to match movie card size */
+  width: 100%;
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f0f0f0; /* Light gray background */
-  border: 2px solid #ddd; /* Light border */
-  border-radius: 5px; /* Match card border radius */
-  font-size: 1rem; /* Font size for text */
-  color: #666; /* Text color */
+  background-color: #f0f0f0;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #666;
 }
 
-
-/* Media Queries for Responsive Design */
 @media (max-width: 768px) {
   h1 {
     font-size: 1.8rem;
@@ -80,7 +76,7 @@ h1 {
   }
 
   .card {
-    max-width: 100%; /* Ensure cards fit within their container */
+    max-width: 100%;
   }
 }
 

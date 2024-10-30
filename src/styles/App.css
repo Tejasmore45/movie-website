@@ -1,44 +1,38 @@
-/* Reset some default styles for consistency */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Color Variables */
 :root {
-  --primary-color: #2c3e50; /* Dark Slate Blue */
-  --secondary-color: #e67e22; /* Orange */
-  --background-color: #ecf0f1; /* Very Light Gray */
-  --text-color: #34495e; /* Dark Charcoal */
-  --muted-text-color: #777; /* Gray */
-  --card-background: #ffffff; /* White for cards */
-  --border-color: #bdc3c7; /* Light Gray */
+  --primary-color: #2c3e50;
+  --secondary-color: #e67e22;
+  --background-color: #ecf0f1;
+  --text-color: #34495e;
+  --muted-text-color: #777;
+  --card-background: #ffffff;
+  --border-color: #bdc3c7;
 }
 
-/* Body styling */
 body {
   font-family: Arial, sans-serif !important;
   line-height: 1.6 !important;
-  background-color: var(--background-color) !important; /* Very Light Gray */
+  background-color: var(--background-color) !important;
   color: var(--text-color) !important;
 }
 
-/* Center content horizontally with padding */
 .container {
   max-width: 1200px !important;
   margin: 0 auto !important;
   padding: 20px !important;
 }
 
-/* Headings styling */
 h1, h2, h3, h4, h5, h6 {
-  color: var(--primary-color) !important; /* Dark Slate Blue for headings */
+  color: var(--primary-color) !important;
 }
 
-/* Button styling */
 button {
-  background-color: var(--secondary-color) !important; /* Orange */
+  background-color: var(--secondary-color) !important;
   color: white !important;
   border: none !important;
   padding: 10px 15px !important;
@@ -48,38 +42,35 @@ button {
 }
 
 button:hover {
-  background-color: #d35400 !important; /* Darker orange on hover */
+  background-color: #d35400 !important;
 }
 
-/* Card styling */
 .card {
   border: 1px solid var(--border-color) !important;
   border-radius: 8px !important;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) !important;
-  background-color: var(--card-background) !important; /* White for cards */
+  background-color: var(--card-background) !important;
 }
 
 .card-body {
-  background-color: var(--card-background) !important; /* White */
+  background-color: var(--card-background) !important;
 }
 
-/* Link styling */
 a {
   color: var(--primary-color) !important;
   text-decoration: none !important;
 }
 
 a:hover {
-  text-decoration: underline !important; /* Underline on hover */
+  text-decoration: underline !important;
 }
 
-/* Additional styles for responsiveness */
 @media (max-width: 768px) {
   .container {
       padding: 10px !important;
   }
 
   button {
-      width: 100% !important; /* Full-width buttons on smaller screens */
+      width: 100% !important;
   }
 }

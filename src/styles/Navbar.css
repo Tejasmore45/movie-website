@@ -22,6 +22,18 @@
   .navbar-toggler {
     border-color: rgba(0, 123, 255, 0.5);
   }
+
+.sticky-top {
+  top: 0;
+  z-index: 1030;
+  background-color: #f8f9fa; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.navbar .form-control {
+  max-width: 250px; 
+}
+
   
   /* Media Queries for Mobile */
   @media (max-width: 768px) {
